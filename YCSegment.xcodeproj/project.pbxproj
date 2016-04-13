@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F2B4A1D1CBE3D3F00F5299A /* YCSegmentItemsContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B4A1C1CBE3D3F00F5299A /* YCSegmentItemsContentView.m */; };
 		9FA7E12A1CA9244F007D00E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7E1291CA9244F007D00E1 /* main.m */; };
 		9FA7E12D1CA9244F007D00E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7E12C1CA9244F007D00E1 /* AppDelegate.m */; };
 		9FA7E1301CA9244F007D00E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7E12F1CA9244F007D00E1 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F2B4A1B1CBE3D3F00F5299A /* YCSegmentItemsContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSegmentItemsContentView.h; sourceTree = "<group>"; };
+		9F2B4A1C1CBE3D3F00F5299A /* YCSegmentItemsContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSegmentItemsContentView.m; sourceTree = "<group>"; };
 		9FA7E1251CA9244F007D00E1 /* YCSegment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCSegment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA7E1291CA9244F007D00E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9FA7E12B1CA9244F007D00E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 			children = (
 				9FA7E1451CA9251C007D00E1 /* YCSegmentViewTitleItem.h */,
 				9FA7E1461CA9251C007D00E1 /* YCSegmentViewTitleItem.m */,
+				9F2B4A1B1CBE3D3F00F5299A /* YCSegmentItemsContentView.h */,
+				9F2B4A1C1CBE3D3F00F5299A /* YCSegmentItemsContentView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				9FA7E1471CA9251C007D00E1 /* YCSegmentViewTitleItem.m in Sources */,
 				9FA7E1301CA9244F007D00E1 /* ViewController.m in Sources */,
 				9FA7E12D1CA9244F007D00E1 /* AppDelegate.m in Sources */,
+				9F2B4A1D1CBE3D3F00F5299A /* YCSegmentItemsContentView.m in Sources */,
 				9FA7E12A1CA9244F007D00E1 /* main.m in Sources */,
 				9FA7E1431CA924BD007D00E1 /* UIView+Sizes.m in Sources */,
 			);
@@ -346,6 +352,7 @@
 				9FA7E13E1CA9244F007D00E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

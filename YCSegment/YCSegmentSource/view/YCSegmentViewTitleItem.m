@@ -15,7 +15,7 @@
 #define _defaultTitleColor_Normal     [UIColor blackColor]
 #define _defaultTitleColor_Highlight  [UIColor redColor]
 
-#define _MinWidth  44
+#define _MinWidth  32
 #define _MaxWidth  YCMainScreenWidth / 2
 
 
@@ -63,7 +63,7 @@
 
 + (CGFloat)calcuWidth:(NSString *)title {
     YCSegmentViewTitleItem *item = [[YCSegmentViewTitleItem alloc] initWithFrame:(CGRectZero) title:title];
-    return [item calcuWidth];
+    return [item calcuWidth] + item.space;
 }
 
 //*************** 个性化 *******************
@@ -129,6 +129,7 @@
         _titleLabel = [[UILabel alloc] initWithFrame:self.bounds];
         _titleLabel.textColor = _defaultTitleColor_Normal;
         _titleLabel.font = _defaultFont;
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_titleLabel];
     }
     return _titleLabel;
