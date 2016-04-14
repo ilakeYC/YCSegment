@@ -55,6 +55,7 @@
         [self.buttonContentView addSubview:item];
         if (_currentItem == nil) {
             _currentItem = item;
+            item.heiglight = YES;
         }
     }
 }
@@ -87,28 +88,68 @@
 
 - (void)buttonAction:(YCSegmentViewTitleItem *)sender {
     NSInteger index = [self.buttonsArray indexOfObject:sender];
+    [self setPage:index];
     if (self.delegate && [self.delegate respondsToSelector:@selector(didSelectedButtonAtIndex:)]) {
         [self.delegate didSelectedButtonAtIndex:index];
     }
 }
 
-- (void)setScrollView:(UIScrollView *)scrollView {
-    if (_scrollView == scrollView) {
+- (void)setPage:(NSInteger)page {
+    if (_page == page) {
         return;
-    } else {
-        [_scrollView removeObserver:self forKeyPath:@"contentOffset"];
     }
-    _scrollView = scrollView;
-    [_scrollView addObserver:self forKeyPath:@"contentOffset" options:(NSKeyValueObservingOptionNew) context:nil];
+    _page = page;
+    [self moveToPage:page];
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
-    NSInteger page = _scrollView.contentOffset.x / _scrollView.bounds.size.width;
-    if (page < 0) {
-        page = 0;
+- (void)moveToPage:(NSInteger)page {
+    if (page > self.buttonsArray.count) {
+        return;
+    }
+    YCSegmentViewTitleItem *item = self.buttonsArray[page];
+    _currentItem.heiglight = NO;
+    _currentItem = item;
+    item.heiglight = YES;
+    [UIView animateWithDuration:0.2 animations:^{
+        CGRect buttonFrame = item.frame;
+        CGRect lineFrame = self.line.frame;
+        lineFrame.origin.x = buttonFrame.origin.x;
+        lineFrame.size.width = buttonFrame.size.width;
+        self.line.frame = lineFrame;
+    } completion:^(BOOL finished) {
+        if (finished) {
+        }
+    }];
+}
+
+- (void)setNormalColor:(UIColor *)normalColor {
+    if (_normalColor == normalColor) {
+        return;
+    }
+    _normalColor = normalColor;
+    for (YCSegmentViewTitleItem *item in self.buttonsArray) {
+        item.normalColor = normalColor;
+    }
+}
+- (void)setHighlightColor:(UIColor *)highlightColor {
+    if (_highlightColor == highlightColor) {
+        return;
+    }
+    _highlightColor = highlightColor;
+    self.line.backgroundColor = highlightColor;
+    for (YCSegmentViewTitleItem *item in self.buttonsArray) {
+        item.highlightColor = highlightColor;
     }
 }
 
+- (void)setFont:(UIFont *)font {
+    if (_font == font) {
+        return;
+    }
+    for (YCSegmentViewTitleItem *item in self.buttonsArray) {
+        item.font = font;
+    }
+}
 
 - (NSMutableArray *)buttonsArray{
     if (!_buttonsArray) {

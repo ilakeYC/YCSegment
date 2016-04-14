@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "YCSegmentViewTitleItem.h"
-#import "YCSegmentItemsContentView.h"
+#import "YCSegmentView.h"
+#import "HomeViewController.h"
+#import "RankViewController.h"
+#import "MasterViewController.h"
+#import "ChoicenessViewController.h"
 
 @interface ViewController ()
 
@@ -18,21 +21,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    YCSegmentViewTitleItem *item = [[YCSegmentViewTitleItem alloc] initWithFrame:(CGRectMake(0, 0, 100, 50)) title:@"测试一aaaaaaaaa下"];
-//    [self.view addSubview:item];
-//    
-//    [item addTarget:self action:@selector(touchAction:)];
 
+    HomeViewController *vc1 = [[HomeViewController alloc] init];
+    vc1.title = @"首页";
     
-    YCSegmentItemsContentView *view = [[YCSegmentItemsContentView alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, 44) titles:@[@"待办", @"已办理", @"我发起"]];
+    RankViewController *vc2 = [[RankViewController alloc] init];
+    vc2.title = @"榜单";
     
+    MasterViewController *vc3 = [[MasterViewController alloc] init];
+    vc3.title = @"达人";
+    
+    ChoicenessViewController *vc4 = [[ChoicenessViewController alloc] init];
+    vc4.title = @"每周精选";
+    
+    
+    YCSegmentView *view = [[YCSegmentView alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, self.view.bounds.size.height) titleHeight:44 viewControllers:@[vc1, vc2, vc3, vc4]];
+    view.highlightColor = [UIColor orangeColor];
     [self.view addSubview:view];
 }
 
-- (void)touchAction:(YCSegmentViewTitleItem *)sender {
-    sender.heiglight = !sender.heiglight;
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

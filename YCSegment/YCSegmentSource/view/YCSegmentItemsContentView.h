@@ -15,7 +15,16 @@
 @property (nonatomic,assign) id<YCSegmentItemsContentViewDelegate> delegate;
 
 @property (nonatomic,assign) BOOL touching;
-@property (nonatomic,weak) UIScrollView *scrollView;
+
+@property (nonatomic,assign) NSInteger page;
+
+///非选中颜色
+@property (nonatomic,strong) UIColor *normalColor;
+///选中颜色
+@property (nonatomic,strong) UIColor *highlightColor;
+///字体
+@property (nonatomic,strong) UIFont  *font;
+
 
 - (instancetype)initWithFrame:(CGRect)frame titles:(NSArray <NSString *>*)titles;
 

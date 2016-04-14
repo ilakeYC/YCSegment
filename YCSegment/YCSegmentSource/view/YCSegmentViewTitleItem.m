@@ -70,10 +70,12 @@
 - (void)setNormalColor:(UIColor *)normalColor {
     _normalColor = normalColor;
     _hasNormalColor = YES;
+    [self setHeiglight:_heiglight];
 }
 - (void)setHighlightColor:(UIColor *)highlightColor {
     _highlightColor = highlightColor;
     _hasHighlightColor = YES;
+    [self setHeiglight:_heiglight];
 }
 - (void)setTitle:(NSString *)title {
     _title = title;

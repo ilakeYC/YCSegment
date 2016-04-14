@@ -16,6 +16,16 @@
 		9FA7E1381CA9244F007D00E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA7E1361CA9244F007D00E1 /* LaunchScreen.storyboard */; };
 		9FA7E1431CA924BD007D00E1 /* UIView+Sizes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7E1421CA924BD007D00E1 /* UIView+Sizes.m */; };
 		9FA7E1471CA9251C007D00E1 /* YCSegmentViewTitleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7E1461CA9251C007D00E1 /* YCSegmentViewTitleItem.m */; };
+		9FEC5DFE1CBF6EB500D84FB5 /* YCSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5DFD1CBF6EB500D84FB5 /* YCSegmentView.m */; };
+		9FEC5E011CBF74D300D84FB5 /* YCSegmentViewUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5E001CBF74D200D84FB5 /* YCSegmentViewUnit.m */; };
+		9FEC5E0C1CBF803800D84FB5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5E0A1CBF803800D84FB5 /* HomeViewController.m */; };
+		9FEC5E0D1CBF803800D84FB5 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC5E0B1CBF803800D84FB5 /* HomeViewController.xib */; };
+		9FEC5E111CBF806A00D84FB5 /* RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5E0F1CBF806A00D84FB5 /* RankViewController.m */; };
+		9FEC5E121CBF806A00D84FB5 /* RankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC5E101CBF806A00D84FB5 /* RankViewController.xib */; };
+		9FEC5E161CBF809100D84FB5 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5E141CBF809100D84FB5 /* MasterViewController.m */; };
+		9FEC5E171CBF809100D84FB5 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC5E151CBF809100D84FB5 /* MasterViewController.xib */; };
+		9FEC5E1B1CBF80C400D84FB5 /* ChoicenessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC5E191CBF80C400D84FB5 /* ChoicenessViewController.m */; };
+		9FEC5E1C1CBF80C400D84FB5 /* ChoicenessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC5E1A1CBF80C400D84FB5 /* ChoicenessViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +46,22 @@
 		9FA7E1451CA9251C007D00E1 /* YCSegmentViewTitleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSegmentViewTitleItem.h; sourceTree = "<group>"; };
 		9FA7E1461CA9251C007D00E1 /* YCSegmentViewTitleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSegmentViewTitleItem.m; sourceTree = "<group>"; };
 		9FA7E1491CA929E4007D00E1 /* YCSegmentDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCSegmentDefines.h; sourceTree = "<group>"; };
+		9FEC5DFC1CBF6EB500D84FB5 /* YCSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSegmentView.h; sourceTree = "<group>"; };
+		9FEC5DFD1CBF6EB500D84FB5 /* YCSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSegmentView.m; sourceTree = "<group>"; };
+		9FEC5DFF1CBF74D200D84FB5 /* YCSegmentViewUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSegmentViewUnit.h; sourceTree = "<group>"; };
+		9FEC5E001CBF74D200D84FB5 /* YCSegmentViewUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSegmentViewUnit.m; sourceTree = "<group>"; };
+		9FEC5E091CBF803800D84FB5 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		9FEC5E0A1CBF803800D84FB5 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		9FEC5E0B1CBF803800D84FB5 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		9FEC5E0E1CBF806A00D84FB5 /* RankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankViewController.h; sourceTree = "<group>"; };
+		9FEC5E0F1CBF806A00D84FB5 /* RankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankViewController.m; sourceTree = "<group>"; };
+		9FEC5E101CBF806A00D84FB5 /* RankViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankViewController.xib; sourceTree = "<group>"; };
+		9FEC5E131CBF809100D84FB5 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		9FEC5E141CBF809100D84FB5 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		9FEC5E151CBF809100D84FB5 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		9FEC5E181CBF80C400D84FB5 /* ChoicenessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoicenessViewController.h; sourceTree = "<group>"; };
+		9FEC5E191CBF80C400D84FB5 /* ChoicenessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoicenessViewController.m; sourceTree = "<group>"; };
+		9FEC5E1A1CBF80C400D84FB5 /* ChoicenessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoicenessViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +94,7 @@
 		9FA7E1271CA9244F007D00E1 /* YCSegment */ = {
 			isa = PBXGroup;
 			children = (
+				9FEC5E081CBF800B00D84FB5 /* ViewControllers */,
 				9FA7E13F1CA9247D007D00E1 /* YCSegmentSource */,
 				9FA7E12B1CA9244F007D00E1 /* AppDelegate.h */,
 				9FA7E12C1CA9244F007D00E1 /* AppDelegate.m */,
@@ -116,6 +143,10 @@
 				9FA7E1461CA9251C007D00E1 /* YCSegmentViewTitleItem.m */,
 				9F2B4A1B1CBE3D3F00F5299A /* YCSegmentItemsContentView.h */,
 				9F2B4A1C1CBE3D3F00F5299A /* YCSegmentItemsContentView.m */,
+				9FEC5DFC1CBF6EB500D84FB5 /* YCSegmentView.h */,
+				9FEC5DFD1CBF6EB500D84FB5 /* YCSegmentView.m */,
+				9FEC5DFF1CBF74D200D84FB5 /* YCSegmentViewUnit.h */,
+				9FEC5E001CBF74D200D84FB5 /* YCSegmentViewUnit.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -126,6 +157,25 @@
 				9FA7E1491CA929E4007D00E1 /* YCSegmentDefines.h */,
 			);
 			path = defines;
+			sourceTree = "<group>";
+		};
+		9FEC5E081CBF800B00D84FB5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FEC5E091CBF803800D84FB5 /* HomeViewController.h */,
+				9FEC5E0A1CBF803800D84FB5 /* HomeViewController.m */,
+				9FEC5E0B1CBF803800D84FB5 /* HomeViewController.xib */,
+				9FEC5E0E1CBF806A00D84FB5 /* RankViewController.h */,
+				9FEC5E0F1CBF806A00D84FB5 /* RankViewController.m */,
+				9FEC5E101CBF806A00D84FB5 /* RankViewController.xib */,
+				9FEC5E131CBF809100D84FB5 /* MasterViewController.h */,
+				9FEC5E141CBF809100D84FB5 /* MasterViewController.m */,
+				9FEC5E151CBF809100D84FB5 /* MasterViewController.xib */,
+				9FEC5E181CBF80C400D84FB5 /* ChoicenessViewController.h */,
+				9FEC5E191CBF80C400D84FB5 /* ChoicenessViewController.m */,
+				9FEC5E1A1CBF80C400D84FB5 /* ChoicenessViewController.xib */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +209,7 @@
 				TargetAttributes = {
 					9FA7E1241CA9244F007D00E1 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 75693XATVN;
 					};
 				};
 			};
@@ -186,8 +237,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FA7E1381CA9244F007D00E1 /* LaunchScreen.storyboard in Resources */,
+				9FEC5E121CBF806A00D84FB5 /* RankViewController.xib in Resources */,
+				9FEC5E171CBF809100D84FB5 /* MasterViewController.xib in Resources */,
 				9FA7E1351CA9244F007D00E1 /* Assets.xcassets in Resources */,
 				9FA7E1331CA9244F007D00E1 /* Main.storyboard in Resources */,
+				9FEC5E1C1CBF80C400D84FB5 /* ChoicenessViewController.xib in Resources */,
+				9FEC5E0D1CBF803800D84FB5 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,9 +253,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FEC5E011CBF74D300D84FB5 /* YCSegmentViewUnit.m in Sources */,
 				9FA7E1471CA9251C007D00E1 /* YCSegmentViewTitleItem.m in Sources */,
 				9FA7E1301CA9244F007D00E1 /* ViewController.m in Sources */,
 				9FA7E12D1CA9244F007D00E1 /* AppDelegate.m in Sources */,
+				9FEC5E111CBF806A00D84FB5 /* RankViewController.m in Sources */,
+				9FEC5DFE1CBF6EB500D84FB5 /* YCSegmentView.m in Sources */,
+				9FEC5E161CBF809100D84FB5 /* MasterViewController.m in Sources */,
+				9FEC5E0C1CBF803800D84FB5 /* HomeViewController.m in Sources */,
+				9FEC5E1B1CBF80C400D84FB5 /* ChoicenessViewController.m in Sources */,
 				9F2B4A1D1CBE3D3F00F5299A /* YCSegmentItemsContentView.m in Sources */,
 				9FA7E12A1CA9244F007D00E1 /* main.m in Sources */,
 				9FA7E1431CA924BD007D00E1 /* UIView+Sizes.m in Sources */,
@@ -315,10 +376,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = YCSegment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lake.YCSegment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -326,10 +390,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = YCSegment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lake.YCSegment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
