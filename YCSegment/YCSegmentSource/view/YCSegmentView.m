@@ -10,7 +10,7 @@
 #import "YCSegmentItemsContentView.h"
 #import "YCSegmentViewUnit.h"
 
-@interface YCSegmentView ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface YCSegmentView ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, YCSegmentItemsContentViewDelegate>
 {
     NSArray *_viewControllers;
     CGFloat  _titleHeight;
@@ -23,6 +23,10 @@
 @end
 
 @implementation YCSegmentView
+
+- (void)dealloc {
+    [self.collectionView removeObserver:self forKeyPath:@"contentOffset"];
+}
 
 - (instancetype)initWithFrame:(CGRect)frame titleHeight:(CGFloat)height viewControllers:(NSArray<UIViewController *> *)viewControllers {
     
@@ -41,6 +45,7 @@
     }
     
     self.titleView = [[YCSegmentItemsContentView alloc] initWithFrame:CGRectZero titles:titles];
+    self.titleView.delegate = self;
     [self addSubview:self.titleView];
     
     self.cLayout = [[UICollectionViewFlowLayout alloc] init];
@@ -86,6 +91,11 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     return collectionView.bounds.size;
+}
+
+- (void)didSelectedButtonAtIndex:(NSInteger)index {
+    CGFloat width = self.collectionView.bounds.size.width;
+    [self.collectionView setContentOffset:(CGPointMake(width * index, 0)) animated:YES];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {

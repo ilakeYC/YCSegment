@@ -16,7 +16,6 @@
     }
     [self.contentView addSubview:view];
     [self setNeedsLayout];
-    _view.backgroundColor = [UIColor whiteColor];
     _view = view;
 }
 
