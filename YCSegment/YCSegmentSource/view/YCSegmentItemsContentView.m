@@ -55,7 +55,7 @@
         [self.buttonContentView addSubview:item];
         if (_currentItem == nil) {
             _currentItem = item;
-            item.heiglight = YES;
+            item.highlight = YES;
         }
     }
 }
@@ -107,9 +107,9 @@
         return;
     }
     YCSegmentViewTitleItem *item = self.buttonsArray[page];
-    _currentItem.heiglight = NO;
+    _currentItem.highlight = NO;
     _currentItem = item;
-    item.heiglight = YES;
+    item.highlight = YES;
     [UIView animateWithDuration:0.2 animations:^{
         CGRect buttonFrame = item.frame;
         CGRect lineFrame = self.line.frame;

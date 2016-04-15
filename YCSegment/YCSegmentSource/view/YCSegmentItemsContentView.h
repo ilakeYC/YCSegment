@@ -14,7 +14,7 @@
 
 @property (nonatomic,assign) id<YCSegmentItemsContentViewDelegate> delegate;
 
-@property (nonatomic,assign) BOOL touching;
+//@property (nonatomic,assign) BOOL touching;
 
 @property (nonatomic,assign) NSInteger page;
 

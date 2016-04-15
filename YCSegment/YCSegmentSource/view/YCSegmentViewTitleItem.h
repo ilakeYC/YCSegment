@@ -21,7 +21,7 @@
 ///间距
 @property (nonatomic,assign) CGFloat  space;
 ///高亮
-@property (nonatomic,assign) BOOL     heiglight;
+@property (nonatomic,assign) BOOL     highlight;
 
 ///不知道是什么
 - (instancetype)initWithFrame:(CGRect)frame title:(NSString *)title;

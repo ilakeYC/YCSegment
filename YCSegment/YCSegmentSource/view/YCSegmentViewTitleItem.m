@@ -39,8 +39,6 @@
     if (self) {
         self.space = 8;
         self.title = title;
-        self.titleLabel.text = title;
-        
     }
     return self;
 }
@@ -70,12 +68,12 @@
 - (void)setNormalColor:(UIColor *)normalColor {
     _normalColor = normalColor;
     _hasNormalColor = YES;
-    [self setHeiglight:_heiglight];
+    [self setHighlight:_highlight];
 }
 - (void)setHighlightColor:(UIColor *)highlightColor {
     _highlightColor = highlightColor;
     _hasHighlightColor = YES;
-    [self setHeiglight:_heiglight];
+    [self setHighlight:_highlight];
 }
 - (void)setTitle:(NSString *)title {
     _title = title;
@@ -89,9 +87,9 @@
     _space = space;
     [self setNeedsLayout];
 }
-- (void)setHeiglight:(BOOL)heiglight {
-    _heiglight = heiglight;
-    self.titleLabel.textColor = heiglight == YES ? _hasHighlightColor == YES ? self.highlightColor : _defaultTitleColor_Highlight : _hasNormalColor == YES ? self.normalColor : _defaultTitleColor_Normal;
+- (void)setHighlight:(BOOL)highlight {
+    _highlight = highlight;
+    self.titleLabel.textColor = highlight == YES ? _hasHighlightColor == YES ? self.highlightColor : _defaultTitleColor_Highlight : _hasNormalColor == YES ? self.normalColor : _defaultTitleColor_Normal;
 }
 
 
@@ -119,8 +117,8 @@
         if (_touchedFlag) {
             [_target performSelector:_action withObject:self];
         }
-        _touchedFlag = NO;
     }
+    _touchedFlag = NO;
     [UIView animateWithDuration:0.1 animations:^{
         self.alpha = 1;
     }];
