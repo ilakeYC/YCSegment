@@ -80,12 +80,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     YCSegmentViewUnit * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"YCSegmentViewUnit" forIndexPath:indexPath];
     UIViewController *vc = _viewControllers[indexPath.section];
-    if (!vc.isViewLoaded) {
-        [vc loadViewIfNeeded];
-    }
-    
     cell.view = vc.view;
-    
     return cell;
 }
 
